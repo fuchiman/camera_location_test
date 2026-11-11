@@ -100,7 +100,15 @@ select:disabled {
   opacity: 0.5;
 }
 
-#locationStatus {
+#submit {
+  width: 100%;
+  background: #159765;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#locationStatus,
+#submitStatus {
   color: #555;
   font-size: 14px;
   overflow-wrap: anywhere;
