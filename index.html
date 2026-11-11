@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>カメラと位置情報のテスト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>カメラと位置情報のテスト</h1>
+  </header>
+
+  <main>
+    <h2>カメラのテスト</h2>
+    <p>写真を撮影しよう！</p>
+
+
+    <section class="camera-section">
+    <video id="camera" autoplay playsinline></video>
+    <img id="preview" alt="撮影した写真">
+
+    <div class="buttons">
+    <button id="startCamera">カメラを起動</button>
+    <select id="cameraSelect" disabled>
+        <option value="">カメラを選択</option>
+    </select>
+    <button id="takePhoto" disabled>撮影する</button>
+    <button id="retake" hidden>撮り直す</button>
+    </div>
+
+    <p id="cameraStatus">カメラは起動していません。</p>
+
+    </section>
+
+
+    <canvas id="canvas" hidden></canvas>
+
+    <section class="location-section">
+    <h3>位置情報のテスト</h3>
+    <button id="getLocation">位置情報をテスト・取得</button>
+    <p id="locationStatus">まだ取得していません。</p>
+
+    <div id="locationInfo" hidden>
+        <p>緯度：<span id="latitude"></span></p>
+        <p>経度：<span id="longitude"></span></p>
+        <p>精度：約<span id="accuracy"></span>m</p>
+        <p>取得時刻：<span id="locationTime"></span></p>
+    </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
