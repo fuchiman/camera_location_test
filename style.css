@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+  color: #222;
+  font-family: sans-serif;
+}
+
+header {
+  background: #243b53;
+  color: white;
+  padding: 18px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 19px;
+  margin: 0;
+}
+
+main {
+  width: min(100% - 28px, 600px);
+  margin: 25px auto;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+section {
+  background: white;
+  padding: 18px;
+  margin-top: 18px;
+  border-radius: 12px;
+}
+
+video,
+#preview {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  background: #222;
+  border-radius: 8px;
+}
+
+#preview {
+  display: none;
+}
+
+#switchCamera {
+  background: #536579;
+}
+
+#cameraStatus {
+  color: #555;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #2864dc;
+  color: white;
+  padding: 13px 18px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button[hidden] {
+  display: none;
+}
+
+select {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  padding: 12px;
+  font-size: 15px;
+  max-width: 100%;
+}
+
+select:disabled {
+  opacity: 0.5;
+}
+
+#locationStatus {
+  color: #555;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+#locationInfo {
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
